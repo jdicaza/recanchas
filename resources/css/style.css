@@ -1,0 +1,261 @@
+/* BODY */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background: #2a985b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1, h2, p {
+  color: white;
+  text-decoration: none;
+}
+
+/* BARRA DE MENU */
+
+nav {
+  background-color: transparent !important;
+  padding: 5px 20px;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.logo a:hover {
+  text-decoration: none;
+}
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE */
+/* Mobil menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+.item.active {
+  display: block;
+}
+/* Tablet menu */
+@media all and (min-width: 600px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+  }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  .button.secondary {
+    border: 0;
+    border-radius: 5px;
+  }
+  .button a {
+    padding: 7.5px 15px;
+    background: #9fc36c;
+    border: 1px #fff solid;
+  }
+  .button.secondary a {
+    background: transparent;
+  }
+  .button a:hover {
+    text-decoration: none;
+    color: #ddd;
+  }
+  .button:not(.secondary) a:hover {
+    background: #627b3f;
+    border-color: #627b3f;
+  }
+  .button.secondary a:hover {
+    color: #ddd;
+  }
+}
+/* Desktop menu */
+@media all and (min-width: 900px) {
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+  .menu li {
+    padding: 15px 10px;
+  }
+  .menu li.button {
+    padding-right: 0;
+  }
+}
+
+/* HEADER */
+
+/* imagen inicio */
+.animador {
+  width: 20%;
+  display: block;
+}
+
+/* LOGIN */
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor input {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 90%;
+    color: #1b262c;
+
+    display: block;
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+}
+
+.contenedor button {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    color:#bbe1fa;
+    width: 100%;
+    height: 40px;
+    border: 1px #bbe1fa solid;
+    border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    background-color: #0f4c75;
+    margin-top: 10px;
+}
+
+.contenedor button:hover {
+    background-color: #bbe1fa;
+    color:#0f4c75;
+}
+
+/* FORMS LOGIN*/
+.form-generic {
+  width: 330px;
+  padding-bottom: 5%;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px 30px;
+  border-top: 2px;
+  color: white;
+}
+.form-generic h2 {
+  margin:0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+}
+.form-entrada {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px 10px;
+}
+.form-control:hover {
+  border: 0 solid #627b3f;
+}
+
+/* Boton Salir Index*/
+.nav button {
+    font-size: 100%;
+    color:#ffffff;
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    margin: auto;
+    border: 1px #bbe1fa solid;
+    border-radius: 2px 2px 2px 2px;
+    background-color: #f59622;
+}
+
+.nav button:hover {
+    background-color: #ff8000;
+    color:#ffffff;
+}
+
+
+/* FOOTER */
+
+footer {
+  width: 100px;
+  margin-top: auto;
+  padding: 1em 0;
+  text-align: center;
+  background-color: transparent !important;
+  width: 100%;
+  }
+
+footer .sociales{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .sociales a{
+  font-size: 35px;
+  color: #fff;
+  padding: 0px 15px;
+}
