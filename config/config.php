@@ -1,6 +1,6 @@
 <?php
-	define('host','svrubuntu');
-	define('username','ubuntuuser');
+	define('host','svrfedora');
+	define('username','juanpicaza');
 	define('password','Passw0rd!!');
 	define('dbname','recanchas');
 ?>

@@ -30,13 +30,19 @@
 			<nav>
           <ul class="menu">
               <li class="logo"><a title="inicio" href="index.php"><img src="../resources/img/logo_title.png" alt="inicio"</img></a></li>
+							<li><a href="usuarios.php">Usuarios</a></li>
+							<li><a class="navbar-brand">Equipos</a></li>
+							<li><a class="navbar-brand">Canchas</a></li>
+							<li><a class="navbar-brand">Partidos</a></li>
+							<li><a class="navbar-brand">Reservas</a></li>
 							<li> <a class="navbar-brand"><?php echo $_SESSION['nombreusuario']?></a></li>
+							
 						<form method="post" action="../controllers/LoginController.php">
 	            <ul class="nav navbar-nav navbar-right">
 	      		   	<li><button class="btn-salir" type="submit" name="salir" id="salir"><span class="glyphicon glyphicon-log-in"></span>Cerrar Sesión</button></li>
 	            </ul>
             </form>
-          </ul>     
+          </ul> 
       </nav>
       
        <!-- Contenedor -->

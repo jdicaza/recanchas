@@ -30,7 +30,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 .logo a:hover {
   text-decoration: none;
@@ -219,7 +219,7 @@ a:hover {
 
 /* Boton Salir Index*/
 .nav button {
-    font-size: 100%;
+    font-size: 90%;
     color:#ffffff;
     width: 100%;
     padding: 10px;
